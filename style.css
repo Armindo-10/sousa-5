@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(500deg, #000000f9,#191970);
+    background-size: cover;
+   
+}
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+.logo img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+
+}
+.navbar ul li{
+    padding: 0 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+.navbar ul li a{
+    color: white;
+}
+.navbar ul li a:hover{
+    border-bottom: 5px solid #696969;
+    width: 10%;
+    transition: 0.5s ease;
+    color: #191970;
+   
+}
+.botao .btn{
+    padding: 10px 25px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.botao .btn:hover{
+    background: none;
+    color: white;
+    border: 2px solid yellow;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*estilizando a section-creat*/
+main .creat{
+    margin: 70px 0;
+}
+.creat .flex-creat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-creat .text-container{
+    width: 50%;
+    color: white;
+    letter-spacing: 1px;
+}
+.flex-creat .imagem-container{
+    width: 50%;
+}
+.flex-creat .imagem-container img{
+    width: 90%;
+    object-fit: cover;
+}
+.text-container h1{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.text-container h2{
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.text-container h2 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+.text-container p{
+    font-size: 1.25rem;
+    margin: 20px 0;
+    font-weight: 300;
+}
+.button-btn{
+    padding: 10px 25px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.button-btn:hover{
+    background: none;
+    border: 2px dashed yellow;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/*estilizando a section-card*/
+.cards .container h1{
+    text-align: center;
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.cards .grid-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    gap: 2rem;
+   
+}
+.cards .grid-card .cards-item{
+    color: white;
+    padding: 30px;
+    background-color: #696969;
+    border-radius: 10px;
+}
+.cards .grid-card .cards-item #icones{
+ 
+    font-size: 1.9rem;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    
+    
+}
+.cards .grid-card .cards-item:hover{
+   border: 2px solid white;
+   cursor: pointer;
+   transition: 0.3s ease;
+}
+.cards .grid-card .cards-item h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.cards .grid-card .cards-item p{
+    font-size:1.2em;
+}
+.cards .cards-item .lorem {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    font-weight: 300;
+    align-items: center;
+    display: flex;
+
+}
+.cards .cards-item .lorem p{
+    font-size: 1.30rem;
+}
+/*estilizando a section-pricingPlan*/
+.pricingPlan .center{
+    text-align: center;
+    color: white;
+    margin: 70px 0;
+}
+.pricingPlan .center h1{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.pricingPlan .center p{
+    font-size: 1.25rem;
+   font-weight: 500;
+}
+
+.pricingPlan .plan-flex{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+ 
+}
+.pricingPlan .plan-flex .plan-world{
+    color: white;
+    align-items: center;
+    background-color: #23090927;
+    margin: 20px 0;
+    padding: 3rem;
+    height: 520px;
+    width: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+.pricingPlan .plan-flex .plan-world:hover{
+    border: 2px solid white;
+    
+}
+.pricingPlan .plan-flex .plan-world h3{
+    font-size: 1.9rem;
+    font-weight: 5500;
+    padding-bottom: 2rem;
+    border-bottom: 2px dashed white;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pricingPlan .plan-flex .plan-world h2{
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+.pricingPlan .plan-flex .plan-world p{
+    font-size: 1.2rem;
+    margin: 3px 0;
+}
+.pricingPlan .plan-flex .plan-world .botao{
+   padding: 10px 25px;
+   border: none;
+   outline: none;
+   font-size: 1rem;
+   font-weight: 700;
+   border-radius: 5px;
+   color: white;
+   background-color: blue;
+   margin-top: 1rem;
+   text-transform: uppercase; 
+   cursor: pointer;
+}
+.pricingPlan .plan-flex .plan-world .botao:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/*estiilizando o footer*/
+
+footer .footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+/*responsividade*/
+@media(max-width: 362px){
+    .creat .flex-creat{
+        display: flex;
+        flex-direction: column;
+    }
+}
